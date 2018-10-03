@@ -10,7 +10,7 @@ cache:
   - node_modules
 env:
   global:
-  - CF_APP=conversation-simple
+  - CF_APP=conference-chatbot
   - CF_API=https://api.ng.bluemix.net
   - CF_ORGANIZATION=WatsonPlatformServices
   - CF_SPACE=demos
