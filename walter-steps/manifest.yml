@@ -1,0 +1,16 @@
+---
+declared-services:
+  upkar-assistant:
+    label: conversation
+    plan: free
+applications:
+- name: walter-conference-chatbot
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  command: npm start
+  path: .
+  memory: 256M
+  instances: 1
+  services:
+  - walterlee-chatbot1
+  env:
+    NPM_CONFIG_PRODUCTION: false
